@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 300px));
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .post {
+    display: block;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .post__image {
+      margin: 0;
+  }
+  
+  .post__image img {
+    width: 100%;
+    vertical-align: top;
+  }
+  
+  .post__texts {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .post__texts--likes,
+  .post__texts--comments {
+    font-weight: bold;
+    text-align: center;
+    display: inline;
+  }
+  
+  .post:hover .post__texts{
+    display: flex;
+  }
